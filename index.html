@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="fr" data-piste="a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time-Physio — Physiothérapie à Lausanne</title>
+<meta name="description" content="Physiothérapie à Lausanne : thérapie manuelle, rééducation active et plateau technique. Trois cabines privatives, séances de 45 minutes, soins à domicile.">
+<link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="maquette-bar" role="group" aria-label="Choix de la direction artistique">
+  <span class="maquette-bar__label">Maquette</span>
+  <div class="pistes" role="radiogroup" aria-label="Pistes">
+    <button class="piste is-active" data-set-piste="a" role="radio" aria-checked="true"><b>01</b> Cabinet de quartier</button>
+    <button class="piste" data-set-piste="b" role="radio" aria-checked="false"><b>02</b> Geste précis</button>
+    <button class="piste" data-set-piste="c" role="radio" aria-checked="false"><b>03</b> Pleine amplitude</button>
+  </div>
+</div>
+
+<header class="site-header" id="haut">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#haut" aria-label="Time-Physio, retour en haut">
+      <svg class="brand__mark" viewBox="0 0 48 28" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <g transform="translate(0.5,2)"><circle cx="5" cy="3.4" r="2.3" fill="currentColor" stroke="none"/><path d="M5 6.4V16.6"/><path d="M5 9L1.2 4.8"/><path d="M5 9L8.8 4.8"/><path d="M5 16.6L2 24.4"/><path d="M5 16.6L8 24.4"/></g>
+          <g transform="translate(13,2)"><circle cx="5" cy="3.4" r="2.3" fill="currentColor" stroke="none"/><path d="M5 6.4V16.6"/><path d="M5 9.2L1 5.6"/><path d="M5 9.2L9 5.2"/><path d="M5 16.6L2 24.4"/><path d="M5 16.6L8 24.4"/></g>
+          <g transform="translate(25.5,2)"><circle cx="5" cy="3.4" r="2.3" fill="currentColor" stroke="none"/><path d="M5 6.4V16.6"/><path d="M5 9L1.4 4.4"/><path d="M5 9L8.6 4.6"/><path d="M5 16.6L2 24.4"/><path d="M5 16.6L8 24.4"/></g>
+          <g transform="translate(38,2)"><circle cx="5" cy="3.4" r="2.3" fill="currentColor" stroke="none"/><path d="M5 6.4V16.6"/><path d="M5 9L1.2 4.8"/><path d="M5 9L8.8 4.8"/><path d="M5 16.6L2 24.4"/><path d="M5 16.6L8 24.4"/></g>
+        </g>
+      </svg>
+      <span class="brand__name">time-physio</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#besoins">Soins</a>
+      <a href="#pathologies">Pathologies</a>
+      <a href="#locaux">Locaux</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-tel" href="tel:+41218031319">021 803 13 19</a>
+      <a class="btn btn--primary btn--sm" href="#rdv">Prendre rendez-vous</a>
+    </div>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="menu-mobile" id="menu-mobile" hidden>
+    <a href="#besoins">Soins</a>
+    <a href="#pathologies">Pathologies</a>
+    <a href="#locaux">Locaux</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn--primary" href="#rdv">Prendre rendez-vous</a>
+    <a class="menu-mobile__tel" href="tel:+41218031319">021 803 13 19</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <a class="hero__place" href="#acces" aria-label="Voir le plan d’accès">
+          <svg class="hero__pin" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.6c-2.2 0-4 1.8-4 4 0 3 4 8.8 4 8.8s4-5.8 4-8.8c0-2.2-1.8-4-4-4Zm0 5.6a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2Z" fill="currentColor"/></svg>
+          Av. de France 64 · <b>1004 Lausanne</b>
+          <svg class="hero__chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 6.5 8 10.5 12 6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <h1 class="hero__title">Retrouvez le <br><em>mouvement</em>.</h1>
+        <p class="hero__lead">Thérapie manuelle et rééducation active, à Lausanne, à deux pas du centre-ville.</p>
+      </div>
+    </div>
+    <figure class="hero__figure">
+      <img src="assets/img/stock/hero-hands.jpg" alt="Thérapie manuelle du genou en cabine" width="1400" height="1400">
+    </figure>
+  </section>
+
+  <!-- ============ RÉSERVATION ============ -->
+  <section class="booking-wrap" id="rdv" aria-label="Prendre rendez-vous">
+    <div class="wrap">
+      <div class="booking">
+        <div class="booking__intro">
+          <p class="booking__title">
+            <svg class="booking__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="3.2" y="5.2" width="17.6" height="15.6" rx="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+              <path d="M8 3v4M16 3v4M3.2 10.2h17.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <circle cx="8.6" cy="14.4" r="1.2" fill="currentColor"/><circle cx="12" cy="14.4" r="1.2" fill="currentColor"/><circle cx="15.4" cy="14.4" r="1.2" fill="currentColor"/>
+            </svg>
+            Prendre rendez-vous
+          </p>
+          <p class="booking__sub">En ligne 24&nbsp;h/24 ou au <a href="tel:+41218031319">021 803 13 19</a></p>
+        </div>
+        <form class="booking__form rdv-form" novalidate>
+          <label class="field">
+            <span class="field__label">Date</span>
+            <input type="date" name="date" required>
+          </label>
+          <label class="field">
+            <span class="field__label">Heure</span>
+            <select name="heure" required>
+              <option value="">Choisir</option>
+              <option>08:00</option><option>10:00</option><option>12:00</option>
+              <option>14:00</option><option>16:00</option><option>18:00</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" type="submit">Voir les disponibilités</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CE QUI COMPTE ============ -->
+  <section class="bubbles-wrap">
+    <div class="wrap bubbles">
+      <div class="bubble">
+        <p class="bubble__title">Remboursé</p>
+        <p class="bubble__text">Sur ordonnance, LAMal ou LAA.</p>
+      </div>
+      <div class="bubble">
+        <p class="bubble__title">CHF&nbsp;90.-</p>
+        <p class="bubble__text">La séance de 45 min, sans ordonnance.</p>
+      </div>
+      <div class="bubble">
+        <p class="bubble__title">3 cabines</p>
+        <p class="bubble__text">Privatives, fermées, calmes.</p>
+      </div>
+      <div class="bubble">
+        <p class="bubble__title">À domicile</p>
+        <p class="bubble__text">Quand se déplacer est impossible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BESOINS ============ -->
+  <section class="section" id="besoins">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Soins</p>
+        <h2 class="section-title">Vous venez pour…</h2>
+      </header>
+
+      <div class="needs">
+        <a class="need" href="#contact">
+          <div class="need__media"><img src="assets/img/stock/back.jpg" alt="Traitement manuel du dos" loading="lazy"></div>
+          <div class="need__body">
+            <h3 class="need__title">Un mal de dos</h3>
+            <p class="need__text">Cervicales, dorsales, lombaires.</p>
+            <span class="need__arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+        <a class="need" href="#contact">
+          <div class="need__media"><img src="assets/img/stock/knee.jpg" alt="Douleur au genou" loading="lazy"></div>
+          <div class="need__body">
+            <h3 class="need__title">Un genou ou une cheville</h3>
+            <p class="need__text">Entorses, fractures, reprise de la marche.</p>
+            <span class="need__arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+        <a class="need" href="#contact">
+          <div class="need__media"><img src="assets/img/stock/exercise.jpg" alt="Exercice de réathlétisation" loading="lazy"></div>
+          <div class="need__body">
+            <h3 class="need__title">Une reprise du sport</h3>
+            <p class="need__text">Réathlétisation sur plateau technique.</p>
+            <span class="need__arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+        <a class="need" href="#contact">
+          <div class="need__media"><img src="assets/img/stock/shoulder.jpg" alt="Traitement de l’épaule" loading="lazy"></div>
+          <div class="need__body">
+            <h3 class="need__title">Une épaule</h3>
+            <p class="need__text">Tendinites, rééducation après opération.</p>
+            <span class="need__arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+        <a class="need" href="#contact">
+          <div class="need__media"><img src="assets/img/stock/postop.jpg" alt="Mobilisation de la jambe après une opération" loading="lazy"></div>
+          <div class="need__body">
+            <h3 class="need__title">Après une opération</h3>
+            <p class="need__text">PTG, PTH, réparations.</p>
+            <span class="need__arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+        <a class="need" href="#contact">
+          <div class="need__media"><img src="assets/img/stock/home.jpg" alt="Séance de physiothérapie à domicile" loading="lazy"></div>
+          <div class="need__body">
+            <h3 class="need__title">Rester chez vous</h3>
+            <p class="need__text">Soins à domicile, sur demande.</p>
+            <span class="need__arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPROCHE (pleine largeur) ============ -->
+  <section class="approche" id="approche">
+    <figure class="approche__media">
+      <img src="assets/img/stock/approche.jpg" alt="Mains du physiothérapeute sur un dos" loading="lazy">
+    </figure>
+    <div class="approche__copy">
+      <p class="eyebrow">Notre approche</p>
+      <h2 class="section-title">La cause, pas seulement la douleur.</h2>
+      <p class="approche__lead">On cherche d’abord pourquoi ça fait mal. Ensuite, on vous rend autonome.</p>
+      <ol class="steps">
+        <li>
+          <span class="steps__num">1</span>
+          <div><h3>Bilan</h3><p>45 minutes pour écouter et tester.</p></div>
+        </li>
+        <li>
+          <span class="steps__num">2</span>
+          <div><h3>Traitement</h3><p>Mains, exercices, machines si besoin.</p></div>
+        </li>
+        <li>
+          <span class="steps__num">3</span>
+          <div><h3>Autonomie</h3><p>Des exercices à refaire chez vous.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PATHOLOGIES ============ -->
+  <section class="section" id="pathologies">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Pathologies</p>
+        <h2 class="section-title">Ce que nous prenons en charge</h2>
+      </header>
+
+      <div class="pathos">
+        <article class="patho">
+          <h3>Colonne vertébrale</h3>
+          <ul role="list"><li>Cervicalgies</li><li>Dorsalgies</li><li>Lombalgies</li><li>Hernies discales</li><li>Torticolis</li></ul>
+        </article>
+        <article class="patho">
+          <h3>Articulations</h3>
+          <ul role="list"><li>Entorses</li><li>Luxations</li><li>Fractures</li><li>Rééducation post-opératoire</li></ul>
+        </article>
+        <article class="patho">
+          <h3>Muscles et tendons</h3>
+          <ul role="list"><li>Tendinites</li><li>Claquages</li><li>Déchirures</li></ul>
+        </article>
+        <article class="patho">
+          <h3>Rééducation sportive</h3>
+          <ul role="list"><li>Réathlétisation</li><li>Reconditionnement</li><li>Post-opératoire</li></ul>
+        </article>
+      </div>
+
+      <div class="special">
+        <h3 class="special__title">Traitements spécialisés</h3>
+        <ul class="special__list" role="list">
+          <li>Urogynécologie</li>
+          <li>ATM — articulation temporo-mandibulaire</li>
+          <li>Électroacupuncture &amp; dry needling</li>
+          <li>Drainage lymphatique manuel</li>
+          <li>Soins à domicile</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCAUX + MACHINES ============ -->
+  <section class="section section--tint" id="locaux">
+    <div class="wrap">
+      <header class="section-head section-head--split">
+        <div>
+          <p class="eyebrow">Les locaux</p>
+          <h2 class="section-title">Un lieu pensé pour bouger</h2>
+        </div>
+        <p class="section-intro">Trois cabines privatives et 70&nbsp;m² de machines, en lumière naturelle.</p>
+      </header>
+
+      <div class="locaux">
+        <figure class="locaux__item">
+          <img src="assets/img/photos/cabine.jpg" alt="Cabine de traitement privative" loading="lazy">
+          <figcaption><span>Cabine de traitement</span> Fermée et calme.</figcaption>
+        </figure>
+        <figure class="locaux__item">
+          <img src="assets/img/photos/plateau.jpg" alt="Salle de réathlétisation et machines" loading="lazy">
+          <figcaption><span>Plateau technique</span> 70&nbsp;m² de machines.</figcaption>
+        </figure>
+      </div>
+
+      <div class="machines">
+        <h3 class="section-title">Trois machines, trois usages</h3>
+        <div class="machines__grid">
+          <article class="machine">
+            <div class="machine__media"><img src="assets/img/machines/game-ready@640.png" alt="Appareil Game Ready GRPro 2.1" loading="lazy"></div>
+            <h4>Game Ready GRPro&nbsp;2.1</h4>
+            <p>Froid et compression. Genoux, épaules, suites d’opération.</p>
+          </article>
+          <article class="machine">
+            <div class="machine__media"><img src="assets/img/machines/masterplus@640.png" alt="Appareil Masterplus Ultra" loading="lazy"></div>
+            <h4>Masterplus Ultra</h4>
+            <p>Ondes de choc. Tendinites, talon, douleurs musculaires.</p>
+          </article>
+          <article class="machine">
+            <div class="machine__media"><img src="assets/img/machines/indiba@640.png" alt="Appareil Indiba AT7" loading="lazy"></div>
+            <h4>Indiba AT7</h4>
+            <p>Radiofréquence. Inflammation, arthrose, entorses.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVIS ============ -->
+  <section class="section" id="avis">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Avis</p>
+        <h2 class="section-title">Ils en parlent mieux que nous</h2>
+      </header>
+
+      <div class="reviews">
+        <figure class="review">
+          <p class="review__stars" aria-label="5 étoiles">★★★★★</p>
+          <blockquote>«&nbsp;J’ai repris le vélo après deux ans de douleurs lombaires.&nbsp;»</blockquote>
+          <figcaption><b>Prénom N.</b> Lausanne <span class="review__tag">exemple</span></figcaption>
+        </figure>
+        <figure class="review">
+          <p class="review__stars" aria-label="5 étoiles">★★★★★</p>
+          <blockquote>«&nbsp;On est vraiment seul avec son physiothérapeute.&nbsp;»</blockquote>
+          <figcaption><b>Prénom N.</b> Prilly <span class="review__tag">exemple</span></figcaption>
+        </figure>
+        <figure class="review">
+          <p class="review__stars" aria-label="5 étoiles">★★★★★</p>
+          <blockquote>«&nbsp;Après ma prothèse de genou, j’ai pu reprendre le travail dans les délais.&nbsp;»</blockquote>
+          <figcaption><b>Prénom N.</b> Renens <span class="review__tag">exemple</span></figcaption>
+        </figure>
+      </div>
+      <p class="reviews__note">Exemples de mise en page — les vrais avis Google seront connectés ici.</p>
+    </div>
+  </section>
+
+  <!-- ============ TARIFS & ACCÈS ============ -->
+  <section class="section section--tint" id="tarifs">
+    <div class="wrap tarifs">
+      <div class="tarifs__col">
+        <p class="eyebrow">Tarifs</p>
+        <h2 class="section-title">Ce que ça coûte</h2>
+        <dl class="tarif-list">
+          <div class="tarif">
+            <dt>Avec ordonnance</dt>
+            <dd><b>Pris en charge</b><span>LAMal ou LAA, facturé directement.</span></dd>
+          </div>
+          <div class="tarif">
+            <dt>Sans ordonnance</dt>
+            <dd><b>CHF 90.-</b><span>Séance de 45 minutes.</span></dd>
+          </div>
+          <div class="tarif">
+            <dt>À domicile</dt>
+            <dd><b>Sur demande</b><span>Conditions par téléphone.</span></dd>
+          </div>
+        </dl>
+        <p class="tarifs__note">Une question sur votre prise en charge&nbsp;? <a href="tel:+41218031319">021 803 13 19</a></p>
+      </div>
+
+      <div class="tarifs__col">
+        <p class="eyebrow">Accès</p>
+        <h2 class="section-title">Nous trouver</h2>
+        <address class="acces">
+          <p class="acces__strong">Av. de France 64<br>1004 Lausanne</p>
+        </address>
+        <div class="acces__block">
+          <h3>Horaires</h3>
+          <p>Lundi – jeudi&nbsp;: 8h00 – 19h30<br>Vendredi&nbsp;: 8h00 – 18h00</p>
+        </div>
+        <div class="acces__block">
+          <h3>Transports</h3>
+          <p>Bus 9, St-Paul (110&nbsp;m) · Bus 4, Aubépines (140&nbsp;m).</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap map-band" id="acces">
+        <figure class="map-block">
+          <img class="map" src="assets/img/map.jpg" alt="Plan du quartier — Avenue de France 64, Lausanne" loading="lazy" width="1560" height="520">
+          <figcaption><a href="https://www.google.com/maps?q=Av.+de+France+64,+1004+Lausanne" target="_blank" rel="noopener">Ouvrir dans Maps</a><span>© OpenStreetMap</span></figcaption>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="wrap faq">
+      <div class="faq__head">
+        <p class="eyebrow">Questions</p>
+        <h2 class="section-title">Les questions qu’on nous pose</h2>
+      </div>
+      <div class="faq__list">
+        <details open>
+          <summary>Faut-il une ordonnance&nbsp;?</summary>
+          <p>Non. Sans prescription, la séance de 45 minutes est facturée CHF&nbsp;90.-. Avec une ordonnance, votre assurance prend en charge.</p>
+        </details>
+        <details>
+          <summary>Est-ce remboursé&nbsp;?</summary>
+          <p>Oui, sur ordonnance, par la LAMal ou la LAA. Nous facturons directement votre assurance.</p>
+        </details>
+        <details>
+          <summary>Combien de temps dure une séance&nbsp;?</summary>
+          <p>45 minutes, bilan compris à la première séance.</p>
+        </details>
+        <details>
+          <summary>Que se passe-t-il à la première séance&nbsp;?</summary>
+          <p>Un bilan, un premier traitement et un plan clair pour la suite.</p>
+        </details>
+        <details>
+          <summary>Puis-je être traité à domicile&nbsp;?</summary>
+          <p>Oui, lorsque le déplacement est impossible. Appelez-nous.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--tint" id="contact">
+    <div class="wrap contact">
+      <div class="contact__copy">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Une question&nbsp;?</h2>
+        <p class="section-intro">Réponse sous 24&nbsp;heures ouvrées.</p>
+        <a class="contact__tel" href="tel:+41218031319">021 803 13 19</a>
+        <p class="contact__addr">Av. de France 64 · 1004 Lausanne</p>
+      </div>
+
+      <form class="contact-form" novalidate>
+        <div class="grid-2">
+          <label class="field field--line">
+            <span class="field__label">Nom</span>
+            <input type="text" name="nom" autocomplete="name" required>
+          </label>
+          <label class="field field--line">
+            <span class="field__label">Téléphone</span>
+            <input type="tel" name="tel" autocomplete="tel" required>
+          </label>
+        </div>
+        <label class="field field--line">
+          <span class="field__label">Email</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label class="field field--line">
+          <span class="field__label">Message</span>
+          <textarea name="message" rows="3" placeholder="Quelques mots sur ce qui vous amène…"></textarea>
+        </label>
+        <label class="check">
+          <input type="checkbox" required>
+          <span>J’accepte que mes données soient utilisées pour me recontacter.</span>
+        </label>
+        <button class="btn btn--primary" type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#haut" aria-label="Time-Physio">
+          <svg class="brand__mark" viewBox="0 0 48 28" aria-hidden="true" focusable="false">
+            <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="translate(0.5,2)"><circle cx="5" cy="3.4" r="2.3" fill="currentColor" stroke="none"/><path d="M5 6.4V16.6"/><path d="M5 9L1.2 4.8"/><path d="M5 9L8.8 4.8"/><path d="M5 16.6L2 24.4"/><path d="M5 16.6L8 24.4"/></g>
+              <g transform="translate(13,2)"><circle cx="5" cy="3.4" r="2.3" fill="currentColor" stroke="none"/><path d="M5 6.4V16.6"/><path d="M5 9.2L1 5.6"/><path d="M5 9.2L9 5.2"/><path d="M5 16.6L2 24.4"/><path d="M5 16.6L8 24.4"/></g>
+              <g transform="translate(25.5,2)"><circle cx="5" cy="3.4" r="2.3" fill="currentColor" stroke="none"/><path d="M5 6.4V16.6"/><path d="M5 9L1.4 4.4"/><path d="M5 9L8.6 4.6"/><path d="M5 16.6L2 24.4"/><path d="M5 16.6L8 24.4"/></g>
+              <g transform="translate(38,2)"><circle cx="5" cy="3.4" r="2.3" fill="currentColor" stroke="none"/><path d="M5 6.4V16.6"/><path d="M5 9L1.2 4.8"/><path d="M5 9L8.8 4.8"/><path d="M5 16.6L2 24.4"/><path d="M5 16.6L8 24.4"/></g>
+            </g>
+          </svg>
+          <span class="brand__name">time-physio</span>
+        </a>
+        <p>Physiothérapie à Lausanne.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Cabinet</h4>
+        <p>Av. de France 64<br>1004 Lausanne<br><a href="tel:+41218031319">021 803 13 19</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Horaires</h4>
+        <p>Lun – jeu&nbsp;: 8h00 – 19h30<br>Ven&nbsp;: 8h00 – 18h00</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <p><a href="#besoins">Soins</a><br><a href="#pathologies">Pathologies</a><br><a href="#tarifs">Tarifs</a><br><a href="#contact">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Time-Physio · Maquette de refonte, non contractuelle</p>
+      <p>Photos d’illustration&nbsp;: Pexels</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
